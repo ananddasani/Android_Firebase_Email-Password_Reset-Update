@@ -2,6 +2,8 @@
 App allows to reset-update the email and password
 
 ## SignIn.java
+
+#### previous code
 ```
 EditText email, password;
 TextView newUser;
@@ -84,6 +86,7 @@ newUser = findViewById(R.id.newUserTextView);
     }
 ```
 
+#### added new feature code
 ```
 TextView forgotPassword;
 
@@ -144,6 +147,8 @@ forgotPassword = findViewById(R.id.forgotPassTextView);
 ```
 
 ## MainActivity.java
+
+#### previous code
 ```
 Button logoutButton, deleteUserButton;
 
@@ -212,6 +217,7 @@ user = FirebaseAuth.getInstance().getCurrentUser();
         });
 ```
 
+#### added new feature code
 ```
 @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
